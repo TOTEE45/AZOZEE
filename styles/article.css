@@ -1,0 +1,58 @@
+.article-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    transition: all 0.2s;
+}
+
+.btn-action:hover {
+    background-color: #e5e7eb;
+}
+
+.btn-action i {
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .article-layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .article-actions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .btn-action {
+        width: 100%;
+        justify-content: center;
+    }
+}
